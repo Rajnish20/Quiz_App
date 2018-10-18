@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">coffeeOrderingApp</string>
+    <string name="Toppings">Toppings</string>
+    <string name="thank_you">Thank You</string>
+</resources>

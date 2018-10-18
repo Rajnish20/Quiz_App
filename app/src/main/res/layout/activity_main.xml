@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.coffeeorderingapp.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name_Edit_Text"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        />
+
+    <TextView
+        android:text="@string/Toppings"
+        style="@style/customText"
+        android:layout_margin="8dp"/>
+
+    <CheckBox
+        android:id="@+id/WhippedCream_check_box"
+
+        android:text="Whipped Cream"
+        style="@style/customText"
+        android:layout_margin="8dp" />
+
+    <CheckBox
+
+        android:id="@+id/chocolate_chech_box"
+        android:layout_margin="8dp"
+        android:text="Chocolate"
+        style="@style/customText"
+        />
+    
+    
+    <TextView
+
+        style="@style/customText"
+        android:layout_margin="8dp"
+        android:text="Quantity"
+        android:id="@+id/Quantity_text_view"
+         />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="+"
+        android:onClick="increment"
+        android:id="@+id/Plus_Button"
+        />
+    <TextView
+
+        android:text="0"
+        android:layout_toRightOf="@id/Plus_Button"
+        android:layout_margin="2dp"
+        style="@style/customText"
+        android:id="@+id/Zero_text_view"
+        />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@id/Zero_text_view"
+        android:layout_marginLeft="18dp"
+        android:onClick="decrement"
+        android:text="-"
+        android:id="@+id/Minus_Button"
+        />
+</RelativeLayout>
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/Plus_Button"
+         android:layout_margin="18dp"
+         android:text="Order"
+         android:onClick="submitOrder"
+         android:id="@+id/Order_Button"
+         />
+
+</LinearLayout>
+    </ScrollView>
